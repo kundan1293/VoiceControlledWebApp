@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Jev Voice Browser Controller",
+  "version": "0.1.0",
+  "description": "Control browser navigation with speech and confidence-gated Jev decisions.",
+  "action": {
+    "default_title": "Jev voice control",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "assets/background.js",
+    "type": "module"
+  },
+  "permissions": ["activeTab", "scripting", "storage"],
+  "optional_host_permissions": ["http://*/*", "https://*/*"],
+  "host_permissions": ["http://127.0.0.1:8787/*"]
+}
